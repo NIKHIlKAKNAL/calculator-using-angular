@@ -1,0 +1,11 @@
+<h1>hii {{title}}</h1>
+<input type="number" [(ngModel)]="num1" />
+<input type="number" [(ngModel)]="num2" />
+<select [(ngModel)]="operator" name="operator">
+  <option *ngFor="let op of operators" [value]="op">
+    {{op}}
+  </option>
+</select>
+<button (click)="calci()">solve</button>
+
+<p>{{ans}}</p>
